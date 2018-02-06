@@ -32,7 +32,9 @@ public class Settings {
      * @return result value.
      */
     public String getValue(String key) {
+        System.out.println(this.prs.stringPropertyNames());
         return this.prs.getProperty(key);
+
     }
 
 }
